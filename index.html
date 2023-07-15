@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link  rel="stylesheet" href="./css/style.css" >
+
+    
+    
+</head>
+<body>
+<!-- 
+    <div class="w-50">
+        <select id="year"> 
+
+        </select>
+    </div>
+ <table >
+    <thead>
+<th>name</th>
+<th>age</th>
+<th>phone</th>
+    </thead>
+    <tbody id="demo">
+        
+    </tbody>
+ </table> -->
+
+ <div class="w-75 shadow-lg m-auto my-5 p-5 bg-dark text-light" >
+    <h1 class="text-center fw-bolder text-uppercase">CRUD SYSTEM</h1>
+    <label>productName:</label>
+    <input type="text" id="pName" class="form-control mb-3"/>
+    <label>productCategory:</label>
+    <input type="text" id="pCat" class="form-control mb-3"/>
+    <label>productPrice:</label>
+    <input type="number" id="pPrice" class="form-control mb-3" />
+    <label>productDescription:</label>
+    <textarea id="desc" class="form-control mb-3">
+    </textarea>
+    
+    <button class="btn btn-primary" id="bton1" onclick="createProduct() "></button>
+    <button class="btn btn-danger" onclick="Reset()">Reset</button>
+    </div>
+    
+    <input type="text" id="prodSearch" onkeyup="searchProduct('bgsuccess')" placeholder="search" class="form-control w-50 m-auto"/>
+    
+    <div class="w-75 m-auto my-5">
+        <table class="table">
+            <thead>
+              
+                    <th >index</th>
+                    <th >name</th>
+                    <th >Category</th>
+                    <th >Price</th>
+                    <th >Description</th>
+                    <th >update</th>
+                    <th >delete</th>
+             
+            </thead>
+            <tbody id="tableBody">
+               
+            
+            </tbody>
+            
+        </table>
+    </div>
+
+ 
+      <script src="./bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+      
+      <script src="index.js"></script>
+</body>
+</html>

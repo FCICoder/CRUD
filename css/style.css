@@ -1,0 +1,25 @@
+/* .demo{
+    border: 1px solid black;
+}
+
+.test:first-child{
+    background-color: aqua;
+}
+
+.test:last-child{
+    background-color: brown;
+} */
+
+/* section{
+    background-color: #e7008a;
+} */
+
+*{
+    font-family: sans-serif;
+  }
+span{
+    background-color: orange;
+}
+mark{
+    background-color:black;
+}
